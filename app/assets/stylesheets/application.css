@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+
+html {
+  font-family: Arial;
+  font-size: 20px;
+  background-color: #eef;
+}
+
+#footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2em;        /* Height of the footer */
+   background: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   padding-top: 1em;
+   color: white;
+}
