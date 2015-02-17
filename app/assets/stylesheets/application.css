@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
 
@@ -30,4 +31,13 @@ html {
    text-align: center;
    padding-top: 1em;
    color: white;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:visited {
+  color: #eee;
 }
