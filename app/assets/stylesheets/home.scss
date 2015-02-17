@@ -1,3 +1,23 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Defaults!
+html {
+  font-family: Arial;
+  font-size: 20px;
+  background-color: #eef;
+}
+
+#main {
+  text-align: center;   // Tell text to be centered
+  top: 30%;             // 50% from the top
+  width: 100%;          // full width (needed)
+  position: absolute;   // position doesn't care about anything else
+  line-height: 1em;     // control line size
+
+  #clock {
+    font-family: impact;
+    font-size: 4em;
+  }
+}
