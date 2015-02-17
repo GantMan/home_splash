@@ -32,7 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# display time nicely
 gem 'stamp'
+
+# add awesome font icons
+gem "font-awesome-rails"
 
 # Easy replacement of Webrick!   Much smaller, nicer, friendlier.
 gem 'thin'
