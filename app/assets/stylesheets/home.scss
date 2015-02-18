@@ -10,6 +10,7 @@
   width: 100%;          // full width (needed)
   position: absolute;   // position doesn't care about anything else
   line-height: 1em;     // control line size
+  text-shadow: 2px 2px 0 #000; // add shadow for contrast
 
   #clock {
     font-family: impact;
