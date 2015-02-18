@@ -19,7 +19,15 @@
 html {
   font-family: Arial;
   font-size: 20px;
-  background-color: #eef;
+  color: white;
+}
+
+body {
+  background: image-url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #footer {
@@ -31,13 +39,17 @@ html {
    text-align: center;
    padding-top: 1em;
    color: white;
+   left: 0;            /* They try to pad it */
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #eee;
+  }
 }
 
-#footer a {
-  color: white;
-  text-decoration: none;
-}
 
-#footer a:visited {
-  color: #eee;
-}
+
