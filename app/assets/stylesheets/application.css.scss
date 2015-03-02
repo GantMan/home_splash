@@ -44,11 +44,11 @@ body {
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      color: #eee
+    }
   }
 
-  a:visited {
-    color: #eee;
-  }
 }
 
 
