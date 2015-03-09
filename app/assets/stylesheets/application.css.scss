@@ -64,6 +64,19 @@ body {
   div {
     padding-top: 0.3em;
   }
+
+  .other-links {
+    font-size: 0.7em;
+    margin-top: 2em;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 5px;
+
+    a {
+      padding: 2px;
+    }
+
+  }
 }
 
 #footer {
