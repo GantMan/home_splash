@@ -16,6 +16,8 @@
  */
 
 
+$minor-sized: .7em;
+
 html {
   font-family: Arial;
   font-size: 20px;
@@ -28,6 +30,21 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  padding: 0;
+  margin: 0;
+}
+
+#clearance {
+  font-size: $minor-sized;
+  padding: $minor-sized;
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
 }
 
 #footer {
