@@ -16,6 +16,8 @@
  */
 
 
+$minor-sized: .7em;
+
 html {
   font-family: Arial;
   font-size: 20px;
@@ -28,6 +30,40 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  padding: 0;
+  margin: 0;
+}
+
+#clearance_links {
+  font-size: $minor-sized;
+  padding: $minor-sized;
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+}
+
+#clearance {
+  background-color: rgba(0,0,0,0.7);
+  padding: 1em 3em 3em 3em;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+
+  a {
+    color: #eee;
+    text-decoration: none;
+    display: block;
+  }
+
+  div {
+    padding-top: 0.3em;
+  }
 }
 
 #footer {

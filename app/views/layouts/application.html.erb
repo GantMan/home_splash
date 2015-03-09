@@ -7,9 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="clearance_links">
+    <% if signed_in? %>
+      Welcome <%= current_user.email %>
+      <%= link_to (fa_icon "sign-out", text: "Sign Out?"), sign_out_path, method: :delete %>
+    <% else %>
+      <%= link_to (fa_icon "users", text: "Sign In"), sign_in_path %>
+    <% end %>
+  </div>
 
-<%= yield %>
+  <div id="flash">
+    <% flash.each do |key, value| %>
+      <div class="flash <%= key %>"><%= value %></div>
+    <% end %>
+  </div>
 
-<%= render 'shared/footer' %>
+
+  <%= yield %>
+
+  <%= render 'shared/footer' %>
 </body>
 </html>
