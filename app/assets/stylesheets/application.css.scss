@@ -35,6 +35,14 @@ body {
   margin: 0;
 }
 
+.flash.notice {
+  background-color: rgba(255,0,0,0.7);
+  padding: 2em;
+  width: 40%;
+  margin: 0.5em auto;
+  border-radius: 5px;
+}
+
 #clearance_links {
   font-size: $minor-sized;
   padding: $minor-sized;

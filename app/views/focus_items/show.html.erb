@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @focus_item.user %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @focus_item.status %>
+</p>
+
+<%= link_to 'Edit', edit_focus_item_path(@focus_item) %> |
+<%= link_to 'Back', focus_items_path %>

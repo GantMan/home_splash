@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :focus_items
+
+  resources :backgrounds
+
+  resources :locations
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

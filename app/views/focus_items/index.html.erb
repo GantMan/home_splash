@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Focus Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @focus_items.each do |focus_item| %>
+      <tr>
+        <td><%= focus_item.user %></td>
+        <td><%= focus_item.status %></td>
+        <td><%= link_to 'Show', focus_item %></td>
+        <td><%= link_to 'Edit', edit_focus_item_path(focus_item) %></td>
+        <td><%= link_to 'Destroy', focus_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Focus item', new_focus_item_path %>
