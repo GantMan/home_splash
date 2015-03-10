@@ -1,4 +1,5 @@
 class FocusItemsController < ApplicationController
+  before_action :require_login
   before_action :set_focus_item, only: [:show, :edit, :update, :destroy]
 
   # GET /focus_items
