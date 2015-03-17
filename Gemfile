@@ -39,6 +39,8 @@ gem 'stamp'
 gem "font-awesome-rails"
 
 
+# Easy replacement of Webrick!   Much smaller, nicer, friendlier.
+gem 'thin'
 
 # Add excellent printing!
 gem 'awesome_print'
@@ -52,8 +54,7 @@ group :production do
 end
 
 group :development, :test do
-  # Easy replacement of Webrick!   Much smaller, nicer, friendlier.
-  gem 'thin'
+
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
