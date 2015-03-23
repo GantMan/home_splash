@@ -21,7 +21,7 @@
   twelveHour = if currentHours == 0 then 12 else currentHours
 
   # Compose the string for display
-  currentTimeString = "#{currentHours}:#{currentMinutes}:#{currentSeconds} #{timeOfDay}"
+  currentTimeString = "#{twelveHour}:#{currentMinutes}:#{currentSeconds} #{timeOfDay}"
   $('#clock').html currentTimeString
 
 pad = (number) ->
