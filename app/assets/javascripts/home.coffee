@@ -18,7 +18,7 @@
   twelveHour = currentHours % 12
 
   # Convert an hours component of "0" to "12"
-  twelveHour = if currentHours == 0 then 12 else currentHours
+  twelveHour = if currentHours == 0 then 12 else twelveHour
 
   # Compose the string for display
   currentTimeString = "#{twelveHour}:#{currentMinutes}:#{currentSeconds} #{timeOfDay}"
